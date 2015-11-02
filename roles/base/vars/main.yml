@@ -1,0 +1,21 @@
+---
+homebrew_taps:
+    - caskroom/cask
+    - homebrew/binary
+    - homebrew/dupes
+    - homebrew/php
+    - homebrew/versions
+
+homebrew_installed_packages:
+    - ack
+    - brew-cask
+    - colordiff
+    - coreutils
+    - dnsmasq
+    - git-flow-avh
+    - npm
+    - nvm
+    - pwgen
+    - pstree
+    - ssh-copy-id
+    - stow
