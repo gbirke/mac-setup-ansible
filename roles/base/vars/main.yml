@@ -19,3 +19,15 @@ homebrew_installed_packages:
     - pstree
     - ssh-copy-id
     - stow
+
+homebrew_installed_casks:
+    - 1password
+    - firefox
+    - google-chrome
+    - google-drive
+    - phpstorm
+    - quicklook-json
+    - spotify
+    - vagrant
+    - virtualbox
+    - yujitach-menumeters
