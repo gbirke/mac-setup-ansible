@@ -21,7 +21,6 @@ homebrew_installed_packages:
     - stow
 
 homebrew_installed_casks:
-    - 1password
     - firefox
     - google-chrome
     - google-drive
@@ -29,5 +28,6 @@ homebrew_installed_casks:
     - quicklook-json
     - spotify
     - vagrant
+    - vagrant-manager
     - virtualbox
     - yujitach-menumeters
