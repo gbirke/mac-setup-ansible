@@ -16,3 +16,17 @@
 - name: Ensure configured homebrew casks are installed.
   homebrew_cask: "name={{ item }} state=present"
   with_items: homebrew_installed_casks
+
+- name: Clone oh-my-zsh
+  git: repo=https://github.com/robbyrussell/oh-my-zsh dest=~/.oh-my-zsh update=no
+
+- name: Check if oh-my-zsh is customized
+  git: repo=https://github.com/gbirke/oh-my-zsh-customizations dest=~/.oh-my-zsh clone=no update=no
+  register: zsh_custom
+
+- name: Delete custom dir if it does not contain our repo
+  file: ~/.oh-my-zsh/custom state=absent
+  when: zsh_custom.changed and not zsh_custom.before
+
+- name: Checkout oh-my-zsh customizations
+  git: repo=https://github.com/gbirke/oh-my-zsh-customizations dest=~/.oh-my-zsh
