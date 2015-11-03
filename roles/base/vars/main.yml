@@ -13,8 +13,6 @@ homebrew_installed_packages:
     - coreutils
     - dnsmasq
     - git-flow-avh
-    - npm
-    - nvm
     - pwgen
     - pstree
     - ssh-copy-id
