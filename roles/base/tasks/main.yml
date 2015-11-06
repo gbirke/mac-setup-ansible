@@ -1,36 +1,8 @@
-# Tap.
-- name: Ensure configured taps are tapped.
-  homebrew_tap: "tap={{ item }} state=present"
-  with_items: homebrew_taps
+- include: install_software.yml
+  tags: software
 
-# Brew.
-- name: Ensure configured homebrew packages are installed.
-  homebrew: "name={{ item }} state=present"
-  with_items: homebrew_installed_packages
-
-- name: Upgrade all homebrew packages (if configured).
-  homebrew: update_homebrew=yes upgrade_all=yes
-  when: homebrew_upgrade_all_packages
-
-# Casks
-- name: Ensure configured homebrew casks are installed.
-  homebrew_cask: "name={{ item }} state=present"
-  with_items: homebrew_installed_casks
-
-- name: Clone oh-my-zsh
-  git: repo=https://github.com/robbyrussell/oh-my-zsh dest=~/.oh-my-zsh update=no
-  # .zshrc will be generated later by the dotfile entries
-
-- name: Check if oh-my-zsh is customized by us
-  stat: path=~/.oh-my-zsh/custom/.git
-  register: zsh_custom_repo
-
-- name: Delete custom dir if it does not contain our repo
-  file: path=~/.oh-my-zsh/custom state=absent
-  when: not zsh_custom_repo.stat.exists
-
-- name: Checkout oh-my-zsh customizations
-  git: repo=git@github.com:gbirke/oh-my-zsh-customizations.git dest=~/.oh-my-zsh/custom
+- include: customize_zsh.yml
+  tags: shell
 
 - name: Checkout dotfiles
   git: repo=git@github.com:gbirke/dotfiles.git dest=~/.dotfiles
