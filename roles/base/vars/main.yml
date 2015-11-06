@@ -29,3 +29,7 @@ homebrew_installed_casks:
     - vagrant-manager
     - virtualbox
     - yujitach-menumeters
+
+oh_my_zsh_custom_repo: git@github.com:gbirke/oh-my-zsh-customizations.git
+
+dotfiles_repo: git@github.com:gbirke/dotfiles.git

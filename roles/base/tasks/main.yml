@@ -5,9 +5,9 @@
   tags: shell
 
 - name: Checkout dotfiles
-  git: repo=git@github.com:gbirke/dotfiles.git dest=~/.dotfiles
-  register: dotfiles_repo
+  git: repo={{dotfiles_repo}} dest={{dotfiles_home}}
+  register: dotfiles_repo_clone
 
 - name: Install dotfiles
-  command: ~/.dotfiles/install_all.sh chdir=~/.dotfiles
-  when: dotfiles_repo.changed
+  command: "{{dotfiles_home}}/install_all.sh chdir={{dotfiles_home}}"
+  when: dotfiles_repo_clone.changed

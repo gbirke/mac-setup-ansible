@@ -1,3 +1,19 @@
 ---
 homebrew_upgrade_all_packages: no
-homebrew_installed_packages:
+
+homebrew_installed_packages: [ stow ]
+
+homebrew_installed_casks: []
+
+# Repository for oh-my-zsh
+oh_my_zsh_repo: https://github.com/robbyrussell/oh-my-zsh
+
+# Where oh-my-zsh will be installed
+oh_my_zsh_home: ~/.oh-my-zsh
+
+oh_my_zsh_custom_repo: ~
+
+# Name of the dotfiles folder (must be directly below ~/)
+dotfiles_home: ~/.dotfiles
+
+
