@@ -1,5 +1,5 @@
 ---
-- hosts: base2
+- hosts: base
   connection: local
   roles:
     - base
