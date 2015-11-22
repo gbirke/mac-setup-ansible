@@ -1,0 +1,17 @@
+---
+private_brew_packages: []
+
+private_brew_casks:
+    - 1password
+    - bartender
+    - default-folder-x
+    - deluge
+    - dropbox
+    - evernote
+    - hazel
+    - little-snitch
+    - path-finder
+    - sublime-text
+    - thunderbird
+    - tower
+    - transmit
