@@ -7,10 +7,10 @@ private_brew_casks:
     - default-folder-x
     - deluge
     - dropbox
-    - evernote
     - hazel
     - little-snitch
     - path-finder
+    - spotify
     - sublime-text
     - thunderbird
     - tower
