@@ -7,8 +7,8 @@
   register: zsh_custom_repo_clone
 
 - name: Delete custom dir if it does not contain our repo
-  file: {{ shellconfig_oh_my_zsh_home }}/custom state=absent
-  when: oh_my_zsh_custom_repo and not zsh_custom_repo_clone.stat.exists
+  file: name={{ shellconfig_oh_my_zsh_home }}/custom state=absent
+  when: shellconfig_oh_my_zsh_custom_repo and not zsh_custom_repo_clone.stat.exists
 
 - name: Checkout oh-my-zsh customizations
   git: repo={{ shellconfig_oh_my_zsh_custom_repo }} dest={{ shellconfig_oh_my_zsh_home }}/custom
@@ -18,8 +18,12 @@
   register: dotfiles_local_repo
 
 - name: Install dotfiles
-  command: {{ shellconfig_dotfiles_home }}/install_all.sh chdir={{ shellconfig_dotfiles_home }}
+  command: "{{ shellconfig_dotfiles_home }}/install_all.sh chdir={{ shellconfig_dotfiles_home }}"
   when: dotfiles_local_repo.changed
+
+- name: Add brew version of zsh to list of allowed shells
+  lineinfile: dest=/etc/shells line='/usr/local/bin/zsh' state=present
+  sudo: true
 
 - name: Make ZSH default shell
   shell: chsh -s /usr/local/bin/zsh

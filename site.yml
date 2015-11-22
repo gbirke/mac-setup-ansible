@@ -4,4 +4,4 @@
   roles:
     - base
     - shellconfig
-    - { name: private, tags: private }
+    - private

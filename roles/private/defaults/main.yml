@@ -12,7 +12,6 @@ private_brew_casks:
     - hazel
     - little-snitch
     - path-finder
-    - spotify
     - sublime-text
     - synology-cloud-station
     - thunderbird

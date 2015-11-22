@@ -1,10 +1,10 @@
 ---
 # Brew.
-- name: Ensure configured homebrew packages are installed.
+- name: Ensure configured private homebrew packages are installed.
   homebrew: "name={{ item }} state=present"
   with_items: private_brew_packages
 
 # Casks
-- name: Ensure configured homebrew casks are installed.
+- name: Ensure configured private homebrew casks are installed.
   homebrew_cask: "name={{ item }} state=present"
   with_items: private_brew_casks
