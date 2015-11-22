@@ -1,3 +1,4 @@
+---
 # Tap.
 - name: Ensure configured taps are tapped.
   homebrew_tap: "tap={{ item }} state=present"

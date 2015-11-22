@@ -1,6 +1,6 @@
 ---
-- hosts: base2
+- hosts: base
   connection: local
   roles:
-    - shellconfig
     - base
+    - shellconfig

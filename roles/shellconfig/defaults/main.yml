@@ -1,6 +1,14 @@
 ---
 shellconfig_oh_my_zsh_repo: https://github.com/robbyrussell/oh-my-zsh
+
+# Where oh-my-zsh will be installed
 shellconfig_oh_my_zsh_home: ~/.oh-my-zsh
+
+# repository for custom folder of oh-my-zsh
 shellconfig_oh_my_zsh_custom_repo: https://github.com/gbirke/oh-my-zsh-customizations
-shellconfig_dotfiles_repo: https://github.com/gbirke/dotfiles.git
+
+# repository for dotfiles
+shellconfig_dotfiles_repo: https://github.com/gbirke/dotfiles
+
+# Name of the dotfiles folder (must be directly below ~/)
 shellconfig_dotfiles_home: ~/.dotfiles
