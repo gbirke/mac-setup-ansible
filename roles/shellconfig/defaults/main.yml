@@ -1,0 +1,6 @@
+---
+shellconfig_oh_my_zsh_repo: https://github.com/robbyrussell/oh-my-zsh
+shellconfig_oh_my_zsh_home: ~/.oh-my-zsh
+shellconfig_oh_my_zsh_custom_repo: https://github.com/gbirke/oh-my-zsh-customizations
+shellconfig_dotfiles_repo: https://github.com/gbirke/dotfiles.git
+shellconfig_dotfiles_home: ~/.dotfiles

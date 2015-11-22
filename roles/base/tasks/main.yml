@@ -16,26 +16,3 @@
 - name: Ensure configured homebrew casks are installed.
   homebrew_cask: "name={{ item }} state=present"
   with_items: homebrew_installed_casks
-
-- name: Clone oh-my-zsh
-  git: repo=https://github.com/robbyrussell/oh-my-zsh dest=~/.oh-my-zsh update=no
-  # .zshrc will be generated later by the dotfile entries
-
-- name: Check if oh-my-zsh is customized
-  git: repo=https://github.com/gbirke/oh-my-zsh-customizations dest=~/.oh-my-zsh clone=no update=no
-  register: zsh_custom_repo
-
-- name: Delete custom dir if it does not contain our repo
-  file: ~/.oh-my-zsh/custom state=absent
-  when: zsh_custom_repo.changed and not zsh_custom_repo.before
-
-- name: Checkout oh-my-zsh customizations
-  git: repo=https://github.com/gbirke/oh-my-zsh-customizations dest=~/.oh-my-zsh
-
-- name: Checkout dotfiles
-  git: repo=git@github.com:gbirke/dotfiles.git dest=~/.dotfiles
-  register: dotfiles_repo
-
-- name: Install dotfiles
-  command: ~/.dotfiles/install_all.sh chdir=~/.dotfiles
-  when: dotfiles_repo.changed
