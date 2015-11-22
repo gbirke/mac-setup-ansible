@@ -3,10 +3,12 @@ private_brew_packages: []
 
 private_brew_casks:
     - 1password
+    - airfoil
     - bartender
     - default-folder-x
     - deluge
     - dropbox
+    - flux
     - hazel
     - little-snitch
     - path-finder
