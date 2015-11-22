@@ -27,5 +27,6 @@ homebrew_installed_casks:
     - spotify
     - vagrant
     - vagrant-manager
+    - vlc
     - virtualbox
     - yujitach-menumeters
