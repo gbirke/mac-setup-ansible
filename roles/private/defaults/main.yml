@@ -5,7 +5,7 @@ private_brew_casks:
     - 1password
     - airfoil
     - bartender
-    - default-folder-x
+ #   - default-folder-x
     - deluge
     - dropbox
     - flux
@@ -17,3 +17,4 @@ private_brew_casks:
     - thunderbird
     - tower
     - transmit
+    - ynab
