@@ -22,6 +22,7 @@ homebrew_installed_casks:
     - firefox
     - google-chrome
     - google-drive
+    - libreoffice
     - phpstorm
     - quicklook-json
     - spotify
