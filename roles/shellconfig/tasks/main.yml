@@ -23,7 +23,8 @@
 
 - name: Add brew version of zsh to list of allowed shells
   lineinfile: dest=/etc/shells line='/usr/local/bin/zsh' state=present
-  sudo: true
+  become: true
+  become_user: root
 
 - name: Make ZSH default shell
   shell: chsh -s /usr/local/bin/zsh
