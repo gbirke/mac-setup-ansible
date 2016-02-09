@@ -14,7 +14,9 @@ homebrew_installed_packages:
     - dnsmasq
     - git-flow-avh
     - node
+    - nmap
     - pwgen
+    - psgrep
     - pstree
     - ssh-copy-id
     - stow
@@ -26,6 +28,7 @@ homebrew_installed_casks:
     - libreoffice
     - phpstorm
     - quicklook-json
+    - sequel-pro
     - spotify
     - the-unarchiver
     - vagrant

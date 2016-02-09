@@ -11,6 +11,7 @@ private_brew_casks:
     - flux
     - hazel
     - little-snitch
+    - omnifocus
     - path-finder
     - sublime-text
     - synology-cloud-station
