@@ -1,5 +1,6 @@
 ---
-private_brew_packages: []
+private_brew_packages:
+    - mediainfo
 
 private_brew_casks:
     - 1password
@@ -15,6 +16,7 @@ private_brew_casks:
     - path-finder
     - sublime-text
     - synology-cloud-station
+    - techstoreclub-simple-comic
     - thunderbird
     - tower
     - transmit

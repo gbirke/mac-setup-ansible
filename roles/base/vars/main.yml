@@ -21,6 +21,7 @@ homebrew_installed_packages:
     - pstree
     - ssh-copy-id
     - stow
+    - wget
 
 homebrew_installed_casks:
     - firefox
