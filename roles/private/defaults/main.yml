@@ -6,7 +6,7 @@ private_brew_casks:
     - 1password
     - airfoil
     - bartender
- #   - default-folder-x
+    - default-folder-x
     - deluge
     - dropbox
     - flux
