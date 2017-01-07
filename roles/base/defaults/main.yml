@@ -3,4 +3,4 @@ homebrew_upgrade_all_packages: no
 
 homebrew_installed_packages: [ stow ]
 
-homebrew_installed_casks: []
+homebrew_installed_casks: [ betterzipql ]
