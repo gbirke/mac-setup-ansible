@@ -1,0 +1,7 @@
+---
+wikimedia_brew_packages:
+  - entr # Tool for watchiung folders and calling a command line tool
+
+wikimedia_brew_casks:
+  - meld    # diff GUI
+  - vivaldi # alternate browser
