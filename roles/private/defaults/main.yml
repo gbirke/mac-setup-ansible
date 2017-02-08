@@ -1,6 +1,5 @@
 ---
-private_brew_packages:
-    - mediainfo
+private_brew_packages: []
 
 private_brew_casks:
     - 1password
@@ -14,7 +13,6 @@ private_brew_casks:
     - little-snitch
     - omnifocus
     - path-finder
-    - sublime-text
     - synology-cloud-station
     - techstoreclub-simple-comic
     - thunderbird

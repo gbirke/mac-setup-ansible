@@ -1,6 +1,42 @@
 ---
 homebrew_upgrade_all_packages: no
 
-homebrew_installed_packages: [ stow ]
+homebrew_taps:
+    - caskroom/cask
+    - homebrew/binary
+    - homebrew/dupes
+    - homebrew/php
+    - homebrew/versions
 
-homebrew_installed_casks: [ betterzipql ]
+homebrew_installed_packages:
+    - ack
+    - brew-cask
+    - colordiff
+    - coreutils
+    - dnsmasq
+    - nmap
+    - node
+    - pwgen
+    - psgrep
+    - pstree
+    - ssh-copy-id
+    - stow
+    - wget
+
+homebrew_installed_casks:
+    - atom
+    - betterzipql
+    - firefox
+    - google-chrome
+    - google-drive
+    - libreoffice
+    - phpstorm
+    - qlmarkdown
+    - quicklook-json
+    - sequel-pro
+    - spotify
+    - the-unarchiver
+    - vagrant
+    - vagrant-manager
+    - vlc
+    - virtualbox
