@@ -30,6 +30,7 @@ homebrew_installed_casks:
     - google-chrome
     - google-drive
     - libreoffice
+    - nvalt
     - phpstorm
     - qlmarkdown
     - quicklook-json
