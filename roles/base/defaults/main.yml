@@ -14,6 +14,7 @@ homebrew_installed_packages:
     - colordiff
     - coreutils
     - dnsmasq
+    - fish
     - nmap
     - node
     - pwgen
@@ -21,6 +22,7 @@ homebrew_installed_packages:
     - pstree
     - ssh-copy-id
     - stow
+    - the_silver_searcher
     - tmux
     - wget
 
