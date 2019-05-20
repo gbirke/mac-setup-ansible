@@ -12,10 +12,9 @@ homebrew_installed_packages:
     - brew-cask
     - colordiff
     - coreutils
-    - dnsmasq
     - fish
+    - fzf
     - nmap
-    - node
     - pwgen
     - psgrep
     - pstree
@@ -30,7 +29,6 @@ homebrew_installed_casks:
     - betterzipql
     - firefox
     - google-chrome
-    - google-backup-and-sync
     - libreoffice
     - nvalt
     - phpstorm
@@ -39,7 +37,4 @@ homebrew_installed_casks:
     - sequel-pro
     - spotify
     - the-unarchiver
-    - vagrant
-    - vagrant-manager
     - vlc
-    - virtualbox
