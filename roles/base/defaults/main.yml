@@ -9,6 +9,7 @@ homebrew_taps:
 
 homebrew_installed_packages:
     - ack
+    - autojump
     - brew-cask
     - colordiff
     - coreutils
